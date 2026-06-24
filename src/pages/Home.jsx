@@ -87,6 +87,7 @@ export default function Home({ setActiveTab, products }) {
           loop 
           muted 
           playsInline 
+          ref={(el) => { if (el) el.muted = true; }}
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
         >
           <source src="/nigelle.mp4" type="video/mp4" />
